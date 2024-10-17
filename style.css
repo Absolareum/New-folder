@@ -1,0 +1,215 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, rgb(54, 0, 87), rgb(12, 1, 47));
+  background-size: 1000% 1000%;
+  color: #54ddff;
+  text-shadow: 1px 1px 2px rgb(1, 10, 82), 0 0 1em rgb(19, 19, 112), 0 0 0.2em blue;
+  animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: medium;
+  font-weight: lighter;
+  font-style: oblique;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 80%; 
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  border-radius: 0px;
+  overflow: hidden;
+  background-color: #c1ffff;
+  position: relative;
+}
+
+#refresh-button {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  flex-grow: 1;
+  background-color: transparent;
+  width: 100%;
+  position: relative;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  width: 80px;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+}
+
+.result {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #110a50;
+  text-size-adjust: ;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  border-radius: 5px;
+}
+
+.result a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.result a:hover {
+  text-decoration: underline;
+}
+
+.group-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Suggestions Dropdown */
+.suggestions {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  top: 40px;
+  left: 0;
+  width: 100%;
+}
+
+.suggestions li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #eee;
+}
+
+/* Spin Animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 1s linear;
+}
+
+
+.button-container {
+  display: flex; /* Use flexbox for vertical stacking */
+  flex-direction: column;
+  align-items: center; /* Center buttons horizontally */
+}
+
+.red-button {
+  background-color: rgb(130, 4, 4);
+  border: none;
+  color: rgb(0, 208, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  border-radius: 50%; /* Makes the button circular */
+  box-shadow: 0 4px #434242; /* Adds a simple 3D effect */
+  margin-bottom: 10px; /* Add spacing between buttons */
+  transition: transform 0.2s ease; /* Smooth transition effect */
+}
+
+.red-button:hover {
+  transform: scale(0.9); /* Make the button slightly larger on hover */
+}
+
+.red-button:active {
+  background-color: #6401b0;
+  color: rgb(255, 242, 0);
+  box-shadow: 0 5px #666; /* Changes the shadow for a clicked effect */
+  transform: translateY(4px) scale(0.95); /* Move down and slightly shrink */
+}
+
+.page-title {
+  font-size: 24px;
+  color: yellow;
+  font-weight: bold;
+  -webkit-text-fill-color: yellow;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+
+}
+
+.image-container {
+    display: flex; 
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-top: 20px;  /* Add some spacing */
+}
+
+.fit-picture {
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+    overflow: hidden;
+    transform: scale(1);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}

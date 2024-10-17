@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBE Search Engine</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="https://www.freeiconspng.com//uploads/search-icon-png-16.png" type="image/png">
+
+</head>
+
+<style>
+img {
+  transition: transform .2s ease; /* Add a smooth transition effect */
+}
+
+img:hover {
+  transform: scale(0.9); /* Increase size by 150% on hover */
+}
+
+/* Styles specifically for phone browsers (screen width <= 480px) */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .content {
+        padding: 10px;
+      }
+
+      .sidebar {
+        display: none; /* Hide sidebar on small screens */
+      }
+    }
+
+</style>
+
+<body>
+
+  <header>
+    <img src="https://d8140uf9fm7d2.cloudfront.net/mingle/mcc/100/InforMCC/Trial05/MingleAttachmentStorage/CustomLogos/CDN/4781/amazonrmena_prd/c76f7a09-5d60-4ed3-8b3e-df48933e44ke.png?638512079182931677" alt="Logo"> 
+    <h1>IBE Search Engine</h1>
+  </header>
+
+    <br />
+    <h2>Progress so far --- All Outbound IBE's for Lane 21 are complete and accurate.
+
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" id="search-input","search-input2" placeholder="Enter your search here...">
+      <button id="search-button">Search</button>
+      <ul class="suggestions" id="suggestions-list"></ul>
+    </div>
+    <button id="refresh-button">Refresh</button>
+    <a href="http://172.29.102.95:8088/data/perspective/client/CHA1/" target="_blank">
+      <img 
+      class="fit-picture"
+      src="https://www.freeiconspng.com/uploads/power-button-icon-22.png" 
+      width="50" height="50" />
+    </a>
+    
+    <ul class="results" id="results-list"></ul>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="file1.js" async></script>
+  <script src="file2.js" defer></script>
+
+</body>
+</html>
